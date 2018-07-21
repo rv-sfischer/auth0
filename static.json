@@ -1,0 +1,17 @@
+{
+  "root": "build/",
+  "headers": {
+    "/**.js": {
+      "Cache-Control": "public, max-age=0, must-revalidate"
+    }
+  },
+  "basic_auth": true,
+  "https_only": true,
+  "clean_urls": true,
+  "redirects": {
+    "/main": {
+      "url": "/",
+      "status": 302
+    }
+  }
+}
